@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bharadwaj/OneDrive/Documents/FSM/simulation/modelsim
+vFsm
+!s110 1688811901
+!i10b 1
+!s100 UYgUz6`P<WQzgdP]QC@UJ1
+I<O>Y6`M6NkeYa>`:b=O6d0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1687507035
+8C:/Users/Bharadwaj/OneDrive/Documents/FSM/Fsm.v
+FC:/Users/Bharadwaj/OneDrive/Documents/FSM/Fsm.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1688811901.000000
+!s107 C:/Users/Bharadwaj/OneDrive/Documents/FSM/Fsm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Bharadwaj/OneDrive/Documents/FSM|C:/Users/Bharadwaj/OneDrive/Documents/FSM/Fsm.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Bharadwaj/OneDrive/Documents/FSM
+Z6 tCvgOpt 0
+n@fsm
+vtest_bench
+!s110 1688811902
+!i10b 1
+!s100 iQ=ba;>OPgE2JC3LhTDA]3
+IgDhC?6>bG4Y<flMUh>AJO2
+R1
+R0
+w1687507080
+8C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v
+FC:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+!s107 C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Bharadwaj/OneDrive/Documents/FSM|C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v|
+!i113 1
+R4
+R5
+R6

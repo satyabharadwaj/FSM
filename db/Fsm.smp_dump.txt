@@ -1,0 +1,10 @@
+
+State Machine - |Fsm|current_state
+Name current_state.EMERGENCY_STATE current_state.PARKING_STATE current_state.MOTION_MODE current_state.REVERSE_MODE current_state.DRIVE_MODE current_state.START current_state.INITIAL_STATE 
+current_state.INITIAL_STATE 0 0 0 0 0 0 0 
+current_state.START 0 0 0 0 0 1 1 
+current_state.DRIVE_MODE 0 0 0 0 1 0 1 
+current_state.REVERSE_MODE 0 0 0 1 0 0 1 
+current_state.MOTION_MODE 0 0 1 0 0 0 1 
+current_state.PARKING_STATE 0 1 0 0 0 0 1 
+current_state.EMERGENCY_STATE 1 0 0 0 0 0 1 

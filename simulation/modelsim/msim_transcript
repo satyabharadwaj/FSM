@@ -1,0 +1,82 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Fsm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Bharadwaj/OneDrive/Documents/FSM {C:/Users/Bharadwaj/OneDrive/Documents/FSM/Fsm.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:55:01 on Jul 08,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Bharadwaj/OneDrive/Documents/FSM" C:/Users/Bharadwaj/OneDrive/Documents/FSM/Fsm.v 
+# -- Compiling module Fsm
+# 
+# Top level modules:
+# 	Fsm
+# End time: 15:55:01 on Jul 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Bharadwaj/OneDrive/Documents/FSM {C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:55:01 on Jul 08,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Bharadwaj/OneDrive/Documents/FSM" C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v 
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 15:55:02 on Jul 08,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test_bench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" test_bench 
+# Start time: 15:55:02 on Jul 08,2023
+# Loading work.test_bench
+# Loading work.Fsm
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time = 5 | Accelerate = 0 | Brake = 0
+# Time = 15 | Accelerate = 0 | Brake = 0
+# Time = 25 | Accelerate = 0 | Brake = 0
+# Time = 35 | Accelerate = 0 | Brake = 0
+# Time = 45 | Accelerate = 0 | Brake = 0
+# Time = 55 | Accelerate = 0 | Brake = 0
+# Time = 65 | Accelerate = 0 | Brake = 0
+# Time = 75 | Accelerate = 0 | Brake = 0
+# Time = 85 | Accelerate = 0 | Brake = 0
+# Time = 95 | Accelerate = 0 | Brake = 0
+# Time = 105 | Accelerate = 0 | Brake = 0
+# Time = 115 | Accelerate = 0 | Brake = 0
+# Time = 125 | Accelerate = 0 | Brake = 1
+# Time = 135 | Accelerate = 0 | Brake = 1
+# Time = 145 | Accelerate = 0 | Brake = 0
+# Time = 155 | Accelerate = 0 | Brake = 0
+# Time = 165 | Accelerate = 0 | Brake = 1
+# Time = 175 | Accelerate = 0 | Brake = 1
+# Time = 185 | Accelerate = 0 | Brake = 1
+# Time = 195 | Accelerate = 0 | Brake = 1
+# Time = 205 | Accelerate = 0 | Brake = 1
+# Time = 215 | Accelerate = 0 | Brake = 1
+# Time = 225 | Accelerate = 0 | Brake = 1
+# Time = 235 | Accelerate = 0 | Brake = 1
+# Time = 245 | Accelerate = 0 | Brake = 1
+# Time = 255 | Accelerate = 0 | Brake = 1
+# Time = 265 | Accelerate = 0 | Brake = 1
+# Time = 275 | Accelerate = 0 | Brake = 1
+# Time = 285 | Accelerate = 0 | Brake = 1
+# Time = 295 | Accelerate = 0 | Brake = 1
+# ** Note: $finish    : C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v(61)
+#    Time: 300 ps  Iteration: 0  Instance: /test_bench
+# 1
+# Break in Module test_bench at C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v line 61
+# End time: 16:30:26 on Jul 08,2023, Elapsed time: 0:35:24
+# Errors: 0, Warnings: 0

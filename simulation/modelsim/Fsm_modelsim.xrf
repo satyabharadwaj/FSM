@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Bharadwaj/OneDrive/Documents/FSM/Fsm.v
+source_file = 1, C:/Users/Bharadwaj/OneDrive/Documents/FSM/test_bench.v
+source_file = 1, C:/Users/Bharadwaj/OneDrive/Documents/FSM/db/Fsm.cbx.xml
+design_name = Fsm
+instance = comp, \accelerate~output , accelerate~output, Fsm, 1
+instance = comp, \brake~output , brake~output, Fsm, 1
+instance = comp, \clk~input , clk~input, Fsm, 1
+instance = comp, \clk~inputCLKENA0 , clk~inputCLKENA0, Fsm, 1
+instance = comp, \obstacle~input , obstacle~input, Fsm, 1
+instance = comp, \speed~input , speed~input, Fsm, 1
+instance = comp, \Selector0~0 , Selector0~0, Fsm, 1
+instance = comp, \reset~input , reset~input, Fsm, 1
+instance = comp, \current_state.INITIAL_STATE , current_state.INITIAL_STATE, Fsm, 1
+instance = comp, \Selector3~0 , Selector3~0, Fsm, 1
+instance = comp, \current_state.EMERGENCY_STATE , current_state.EMERGENCY_STATE, Fsm, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Fsm, 1

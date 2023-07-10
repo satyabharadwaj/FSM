@@ -1,0 +1,105 @@
+module automatic_car (
+  input wire clk,
+  input wire reset,
+  input wire gear_up,
+  input wire gear_down,
+  output reg [1:0] gear
+);
+
+  // Define the states
+  typedef enum logic [1:0] {
+    PARK,
+    REVERSE,
+    NEUTRAL,
+    DRIVE
+  } state_t;
+
+  // Define the current state and next state
+  reg [1:0] current_state;
+  reg [1:0] next_state;
+
+  // Define the state register
+  always @(posedge clk or posedge reset) begin
+    if (reset) begin
+      current_state <= PARK;
+    end
+    else begin
+      current_state <= next_state;
+    end
+  end
+
+  // Define the next state logic
+  always @(current_state or gear_up or gear_down) begin
+    case (current_state)
+      PARK: begin
+        if (gear_up) begin
+          next_state <= REVERSE;
+        end
+        else if (gear_down) begin
+          next_state <= NEUTRAL;
+        end
+        else begin
+          next_state <= PARK;
+        end
+      end
+      REVERSE: begin
+        if (gear_up) begin
+          next_state <= NEUTRAL;
+        end
+        else if (gear_down) begin
+          next_state <= PARK;
+        end
+        else begin
+          next_state <= REVERSE;
+        end
+      end
+      NEUTRAL: begin
+        if (gear_up) begin
+          next_state <= DRIVE;
+        end
+        else if (gear_down) begin
+          next_state <= REVERSE;
+        end
+        else begin
+          next_state <= NEUTRAL;
+        end
+      end
+      DRIVE: begin
+        if (gear_up) begin
+          next_state <= DRIVE;
+        end
+        else if (gear_down) begin
+          next_state <= NEUTRAL;
+        end
+        else begin
+          next_state <= DRIVE;
+        end
+      end
+      default: begin
+        next_state <= PARK;
+      end
+    endcase
+  end
+
+  // Define the output logic
+  always @(current_state) begin
+    case (current_state)
+      PARK: begin
+        gear <= 2'b00;  // Neutral
+      end
+      REVERSE: begin
+        gear <= 2'b10;  // Reverse
+      end
+      NEUTRAL: begin
+        gear <= 2'b00;  // Neutral
+      end
+      DRIVE: begin
+        gear <= 2'b01;  // Drive
+      end
+      default: begin
+        gear <= 2'b00;  // Neutral
+      end
+    endcase
+  end
+
+endmodule
