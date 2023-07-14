@@ -5,6 +5,7 @@
 > (https://www.intel.com/content/www/us/en/software-kit/665990/intel-quartus-prime-lite-edition-design-software-version-18-1-for-windows.html)
 
 ## PROCESS OF PROJECT
+
 > Project Creation
 > Design Entry
 > Design Compilation and Synthesis
@@ -14,5 +15,5 @@
 > Timing Analysis and Optimization
 > FPGA Programming
 > Verification and Testing
-> 
+
 
