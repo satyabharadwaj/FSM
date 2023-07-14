@@ -50,7 +50,7 @@
 
 # FPGA BOARD
 
-> For online FGPA board visit
+> For online FPGA board visit
 
 > (https://intel-uw.labsland.com/standalone/join/GRBF8537)
 
