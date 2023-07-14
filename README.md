@@ -25,4 +25,10 @@
 
 > Verification and Testing
 
+# OUTPUT SCREENS
+
+> Resource Usage Summary
+![image](https://github.com/satyabharadwaj/TEAM-SIGMA-_-MRCET_-DESIGN-AND-STIMILATION-OF-LAND-ROVER-FIGO-FSM/assets/113229999/88edd039-fc2a-4c9e-812c-bdfe25804395)
+
+
 
