@@ -1,4 +1,4 @@
-# DESIGN AND STIMULATION OF LAND ROVER AND FIGO FSM
+ # DESIGN AND STIMULATION OF LAND ROVER AND FIGO FSM
 >The implementation of the Land Rover Figo FSM aims to simulate the behavior of a Land Rover Figo vehicle using a Finite State Machine (FSM). A FSM is a mathematical model that represents a system with a finite number of states and transitions between those states based on certain events or conditions.
 ## SOFTWARE INSTALLATION
 >We will use Intel® Quartus® Prime Lite Edition Design Software Version 18.1
@@ -53,6 +53,10 @@
 > For online FGPA board visit
 
 > (https://intel-uw.labsland.com/standalone/join/GRBF8537)
+
+# VIDEO DEMO
+
+> (https://www.loom.com/share/46811dad35fd40be96ed82cbce79cf7e?sid=ef261d32-bc2f-48d9-898f-7a0b49be28c3)
 
 
 
