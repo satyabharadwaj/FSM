@@ -8,13 +8,21 @@
 ## PROCESS OF PROJECT
 
 > Project Creation
+
 > Design Entry
+
 > Design Compilation and Synthesis
+
 > Functional Simulation
+
 > Design Implementation
+
 > Fitter Placement and Routing
+
 > Timing Analysis and Optimization
+
 > FPGA Programming
+
 > Verification and Testing
 
 
