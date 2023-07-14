@@ -1,5 +1,5 @@
 Flow report for Fsm
-Thu Jul 13 19:07:42 2023
+Fri Jul 14 12:27:16 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Jul 13 19:07:42 2023       ;
+; Flow Status                     ; Successful - Fri Jul 14 12:27:16 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Fsm                                         ;
 ; Top-level Entity Name           ; Fsm                                         ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/13/2023 19:06:14 ;
+; Start date & time ; 07/14/2023 12:26:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Fsm                 ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 198208560223287.168925537336568        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 198208560223287.168931778414640        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; test_bench     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test_bench                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -104,12 +104,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4849 MB             ; 00:00:07                           ;
-; Fitter               ; 00:00:49     ; 1.0                     ; 6762 MB             ; 00:00:38                           ;
-; Assembler            ; 00:00:10     ; 1.0                     ; 4835 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5127 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4729 MB             ; 00:00:01                           ;
-; Total                ; 00:01:22     ; --                      ; --                  ; 00:00:53                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4848 MB             ; 00:00:06                           ;
+; Fitter               ; 00:00:29     ; 1.0                     ; 6704 MB             ; 00:00:23                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4835 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5129 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4729 MB             ; 00:00:00                           ;
+; Total                ; 00:00:48     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
