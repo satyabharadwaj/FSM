@@ -1,5 +1,5 @@
 Power Analyzer report for Fsm
-Sat Jul 08 15:56:22 2023
+Wed Jul 12 21:56:58 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -54,12 +54,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.5%      ;
+;     Processor 2            ;   3.6%      ;
 ;     Processors 3-6         ;   0.3%      ;
 +----------------------------+-------------+
 
@@ -67,17 +67,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Sat Jul 08 15:56:22 2023            ;
+; Power Analyzer Status                  ; Successful - Wed Jul 12 21:56:58 2023            ;
 ; Quartus Prime Version                  ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition      ;
 ; Revision Name                          ; Fsm                                              ;
 ; Top-level Entity Name                  ; Fsm                                              ;
 ; Family                                 ; Cyclone V                                        ;
 ; Device                                 ; 5CSEMA5F31C6                                     ;
 ; Power Models                           ; Final                                            ;
-; Total Thermal Power Dissipation        ; 419.98 mW                                        ;
+; Total Thermal Power Dissipation        ; 420.20 mW                                        ;
 ; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
-; Core Static Thermal Power Dissipation  ; 411.22 mW                                        ;
-; I/O Thermal Power Dissipation          ; 8.76 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 411.23 mW                                        ;
+; I/O Thermal Power Dissipation          ; 8.97 mW                                          ;
 ; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
 +----------------------------------------+--------------------------------------------------+
 
@@ -231,7 +231,7 @@ refer to the applicable agreement for further details.
 ; B2L      ; --            ; --                  ; --                    ; --                   ;
 ; B1L      ; --            ; --                  ; --                    ; --                   ;
 ; B0L      ; --            ; --                  ; --                    ; --                   ;
-; 3A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 3A       ; 3.3V          ; 0.08 mA             ; 0.00 mA               ; 0.08 mA              ;
 ; 3B       ; 3.3V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
 ; 4A       ; 3.3V          ; 0.08 mA             ; 0.00 mA               ; 0.08 mA              ;
 ; 5A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
@@ -252,8 +252,8 @@ refer to the applicable agreement for further details.
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
-; 2.5V          ; 0.71 mA                 ; 0.00 mA                   ; 0.71 mA                  ; 0.71 mA                          ;
-; 3.3V          ; 0.15 mA                 ; 0.00 mA                   ; 0.15 mA                  ; 0.15 mA                          ;
+; 2.5V          ; 0.64 mA                 ; 0.00 mA                   ; 0.64 mA                  ; 0.64 mA                          ;
+; 3.3V          ; 0.22 mA                 ; 0.00 mA                   ; 0.22 mA                  ; 0.22 mA                          ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 (1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
 (2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
@@ -267,7 +267,7 @@ refer to the applicable agreement for further details.
 ; B2L      ; --            ; --                  ; --                    ; --                   ;
 ; B1L      ; --            ; --                  ; --                    ; --                   ;
 ; B0L      ; --            ; --                  ; --                    ; --                   ;
-; 3A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 3A       ; 3.3V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
 ; 3B       ; 3.3V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
 ; 4A       ; 3.3V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
 ; 5A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
@@ -288,8 +288,8 @@ refer to the applicable agreement for further details.
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; VCCPD Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
-; 2.5V          ; 1.96 mA                 ; 0.00 mA                   ; 1.96 mA                  ; 1.96 mA                          ;
-; 3.3V          ; 0.40 mA                 ; 0.00 mA                   ; 0.40 mA                  ; 0.40 mA                          ;
+; 2.5V          ; 1.76 mA                 ; 0.00 mA                   ; 1.76 mA                  ; 1.76 mA                          ;
+; 3.3V          ; 0.60 mA                 ; 0.00 mA                   ; 0.60 mA                  ; 0.60 mA                          ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 (1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
 (2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
@@ -336,7 +336,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Jul 08 15:56:15 2023
+    Info: Processing started: Wed Jul 12 21:56:55 2023
 Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off Fsm -c Fsm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is 0 degrees C
@@ -355,11 +355,11 @@ Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specifi
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
-Info (215031): Total thermal power estimate for the design is 419.98 mW
+Info (215031): Total thermal power estimate for the design is 420.20 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5187 megabytes
-    Info: Processing ended: Sat Jul 08 15:56:22 2023
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 5212 megabytes
+    Info: Processing ended: Wed Jul 12 21:56:58 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

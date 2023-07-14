@@ -62,12 +62,12 @@ set_global_assignment -name EDA_TEST_BENCH_NAME test_bench -section_id eda_simul
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_bench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_bench -section_id test_bench
 set_global_assignment -name EDA_TEST_BENCH_FILE test_bench.v -section_id test_bench
-set_location_assignment PIN_AK18 -to clk
+set_location_assignment PIN_AC12 -to clk
 set_location_assignment PIN_V16 -to accelerate
-set_location_assignment PIN_AK19 -to obstacle
-set_location_assignment PIN_AJ19 -to speed
-set_location_assignment PIN_W16 -to brake
-set_location_assignment PIN_AJ17 -to reset
+set_location_assignment PIN_AB12 -to obstacle
+set_location_assignment PIN_AE12 -to speed
+set_location_assignment PIN_V17 -to brake
+set_location_assignment PIN_AF14 -to reset
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to speed
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to accelerate
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to obstacle

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "07/08/2023 20:41:39"
+// DATE "07/13/2023 19:07:42"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -44,11 +44,11 @@ output 	brake;
 
 // Design Ports Information
 // accelerate	=>  Location: PIN_V16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-// brake	=>  Location: PIN_W16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-// obstacle	=>  Location: PIN_AK19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// clk	=>  Location: PIN_AK18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// reset	=>  Location: PIN_AJ17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// speed	=>  Location: PIN_AJ19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// brake	=>  Location: PIN_V17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// obstacle	=>  Location: PIN_AB12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// clk	=>  Location: PIN_AC12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// reset	=>  Location: PIN_AF14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// speed	=>  Location: PIN_AE12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -90,7 +90,7 @@ defparam \accelerate~output .open_drain_output = "false";
 defparam \accelerate~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X52_Y0_N19
+// Location: IOOBUF_X60_Y0_N2
 cyclonev_io_obuf \brake~output (
 	.i(\current_state.EMERGENCY_STATE~q ),
 	.oe(vcc),
@@ -106,7 +106,7 @@ defparam \brake~output .open_drain_output = "false";
 defparam \brake~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X58_Y0_N58
+// Location: IOIBUF_X16_Y0_N1
 cyclonev_io_ibuf \clk~input (
 	.i(clk),
 	.ibar(gnd),
@@ -131,7 +131,7 @@ defparam \clk~inputCLKENA0 .ena_register_power_up = "high";
 defparam \clk~inputCLKENA0 .test_syn = "high";
 // synopsys translate_on
 
-// Location: IOIBUF_X60_Y0_N52
+// Location: IOIBUF_X12_Y0_N18
 cyclonev_io_ibuf \obstacle~input (
 	.i(obstacle),
 	.ibar(gnd),
@@ -142,7 +142,7 @@ defparam \obstacle~input .bus_hold = "false";
 defparam \obstacle~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X60_Y0_N35
+// Location: IOIBUF_X2_Y0_N58
 cyclonev_io_ibuf \speed~input (
 	.i(speed),
 	.ibar(gnd),
@@ -153,7 +153,7 @@ defparam \speed~input .bus_hold = "false";
 defparam \speed~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X57_Y1_N24
+// Location: LABCELL_X23_Y2_N12
 cyclonev_lcell_comb \Selector0~0 (
 // Equation(s):
 // \Selector0~0_combout  = ( \current_state.EMERGENCY_STATE~q  & ( (\obstacle~input_o  & ((\current_state.INITIAL_STATE~q ) # (\speed~input_o ))) ) ) # ( !\current_state.EMERGENCY_STATE~q  & ( (\current_state.INITIAL_STATE~q ) # (\speed~input_o ) ) )
@@ -177,7 +177,7 @@ defparam \Selector0~0 .lut_mask = 64'h0FFF0FFF05550555;
 defparam \Selector0~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: IOIBUF_X58_Y0_N41
+// Location: IOIBUF_X32_Y0_N1
 cyclonev_io_ibuf \reset~input (
 	.i(reset),
 	.ibar(gnd),
@@ -188,7 +188,7 @@ defparam \reset~input .bus_hold = "false";
 defparam \reset~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: FF_X57_Y1_N25
+// Location: FF_X23_Y2_N13
 dffeas \current_state.INITIAL_STATE (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Selector0~0_combout ),
@@ -207,7 +207,7 @@ defparam \current_state.INITIAL_STATE .is_wysiwyg = "true";
 defparam \current_state.INITIAL_STATE .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X57_Y1_N27
+// Location: LABCELL_X23_Y2_N15
 cyclonev_lcell_comb \Selector3~0 (
 // Equation(s):
 // \Selector3~0_combout  = ( \current_state.INITIAL_STATE~q  & ( \obstacle~input_o  ) )
@@ -231,7 +231,7 @@ defparam \Selector3~0 .lut_mask = 64'h0000000055555555;
 defparam \Selector3~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X57_Y1_N29
+// Location: FF_X23_Y2_N17
 dffeas \current_state.EMERGENCY_STATE (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Selector3~0_combout ),
@@ -250,7 +250,7 @@ defparam \current_state.EMERGENCY_STATE .is_wysiwyg = "true";
 defparam \current_state.EMERGENCY_STATE .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X45_Y36_N3
+// Location: LABCELL_X50_Y9_N3
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 
